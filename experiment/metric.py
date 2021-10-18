@@ -1,4 +1,3 @@
-
 class Metric:
     def __init__(self, name, key_values_dict, primary_key, experiment_manager):
         self.experiment_manager = experiment_manager
@@ -6,7 +5,6 @@ class Metric:
         self.table_name = name
         self.experiment_manager.make_table(name, key_values_dict, primary_key)
         self.list_of_data = []
-
 
     def commit_to_database(self):
         self.experiment_manager.insert_values(self.table_name, self.keys, self.list_of_data)

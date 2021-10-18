@@ -1,12 +1,14 @@
 import json
 import random
 import time
+
 import mysql.connector
 
 
-
-
 class ExperimentManager:
+    '''
+    Class to manage and log experiments to a mysql server
+    '''
 
     def __init__(self, experiment_name, parameters_dict, compute_canada_username):
         import sys
