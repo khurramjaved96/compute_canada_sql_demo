@@ -7,13 +7,6 @@ import mysql.connector
 
 
 class ExperimentManager:
-    '''
-    Class to create directory and other meta information to store experiment results.
-    A directory is created in output_dir/DDMMYYYY/name_0
-    In-case there already exists a folder called name, name_1 would be created.
-
-    Race condition:
-    '''
 
     def __init__(self, experiment_name, parameters_dict, compute_canada_username):
         import sys
