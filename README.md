@@ -18,7 +18,7 @@ https://docs.computecanada.ca/wiki/Database_servers
 parallel python mysql_demo.py --name sweep_test --step-size 1e-2 1e-3 1e-4 1e-5 --b2 0.9 0.99 --b1 0 0.9 0.99 --seed 0 1 2 3 4 5 6 7 8 9  --run ::: {0..239} 
 ```
 
-The command will run 239 jobs and and store the data in the database. You can look at the data by executing the following commands: 
+The command will run 239 jobs and and store the data in the database. You can look at the data by executing the following sql queries: 
 
 1. use COMPUTE_CANADA_USERNAME_sweep_test; 
 2. select * from runs; 
